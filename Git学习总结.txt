@@ -1,0 +1,19 @@
+1，当远程分支信息发生改变
+   git remote update origin -p
+
+2.git reset  只能操作本地仓库，无法操作远程仓库，若希望回退后提交，可执行git push -f
+a,--mixed 默认参数，回退暂存区和本地仓库，但保留工作区的修改
+b,--soft   回退本地仓库，但不会回退暂存区，若需再次提交，直接commit即可
+c,--hard，回退一切，所有都不保留
+
+3.git revert 可以同时操作本地与远程仓库
+git revert用于反转提交,执行revert命令时要求工作树必须是干净的.（注意！注意！！注意！！！）
+git revert用一个新提交来消除一个历史提交所做的任何修改.
+revert 之后你的本地代码会回滚到指定的历史版本,这时你再 git push 既可以把线上的代码更新.(这里不会像reset造成冲突的问题)
+revert 使用,需要先找到你想回滚版本唯一的commit标识代码,可以用 git log 或者在adgit搭建的web环境历史提交记录里查看.
+
+4.git rebase(指定区间前开后闭)
+a,git rabase startpoint endpoint --onto branchname(合并操作)
+b,git rabse -i startpoint endpoint（合并多个提交）
+
+5.git cherry-pick commit-id1 commit id2[....] 合并操作
