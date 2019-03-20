@@ -17,3 +17,6 @@ a,git rabase startpoint endpoint --onto branchname(合并操作)
 b,git rabse -i startpoint endpoint（合并多个提交）
 
 5.git cherry-pick commit-id1 commit id2[....] 合并操作
+
+6.在指定节点创建分支
+git checkout -b xxx(分支名) commit-ID
