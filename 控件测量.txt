@@ -1,0 +1,17 @@
+父View是EXACTLY，                 	子view的大小指定为确定值，			则给子view的建议大小是子view自己设置的大小，规格为EXACTLY。
+
+父View是EXACTLY，                	子view的大小指定为MATCH_PARENT，		则给子view的建议大小是父view剩下的大小，规格为EXACTLY。
+
+父View是EXACTLY，		子view的大小指定为WRAP_CONTENT，		则给子view的建议大小是父view剩下的大小，规格为AT_MOST。
+
+父View是AT_MOST，		子view的大小指定为确定值，			则给子view的建议大小是子view自己设置的大小，规格为EXACTLY。
+
+父View是AT_MOST，		子view的大小指定为MATCH_PARENT，		则给子view的建议大小是父view剩下的大小，规格为AT_MOST。
+
+父View是AT_MOST，		子view的大小指定为WRAP_CONTENT，		则给子view的建议大小是父view剩下的大小，规格为AT_MOST。
+
+父View是UNSPECIFIED，	子view的大小指定为确定值，			则给子view的建议大小是子view自己设置的大小，规格为EXACTLY。
+
+父View是UNSPECIFIED，	子view的大小指定为MATCH_PARENT，		则给子view的建议大小0，规格为UNSPECIFIED。
+
+父View是UNSPECIFIED，	子view的大小指定为WRAP_CONTENT，		则给子view的建议大小0，规格为UNSPECIFIED。
